@@ -1,0 +1,129 @@
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage{multicol}
+\usepackage{amsmath}
+\usepackage{url}
+\setlength{\columnsep}{.59cm}
+\title{Literature Review for Liver Disease Prediction}
+\author{Sudharsan Swaminathan \\ \texttt{sudharsan.swaminathan2@mail.dcu.ie}}
+\date{February 2024}
+\usepackage{setspace}
+\begin{document}
+\maketitle
+\begin{multicols}{2}
+\section{Introduction}
+Millions of people worldwide are impacted by liver diseases, which include nonalcoholic fatty liver disease (NAFLD), which is a major global health burden. For prompt intervention and efficient management, liver disease detection and accurate prediction are essential. Recent developments in clinical decision support systems have been essential in automating the identification of care gaps for patients with liver diseases receiving primary care [1]. Improving the interpretation of abnormal liver function tests has become more dependent on the integration of medical knowledge and technology [2].The novel approach to liver fibrosis prediction by Altay and Alatas [9], enriches the project's foundation
+
+Liver disorders, particularly nonalcoholic fatty liver disease (NAFLD), pose a serious threat to world health. For an intervention to be effective, timely detection and precise prediction are essential. With the use of evolutionary multi-objective methods [3] and advances in clinical decision support systems [1], this liver disease prediction project seeks to improve the precision of identifying individuals who are at risk.
+
+\vspace{20pt}
+
+The European Association for the Study of the Liver [5], Ando and Jou [4], and nutritional considerations [6] all provide guidelines that highlight the need for sophisticated methodologies that are still realistic. In accordance with these recommendations, our project incorporates cutting-edge decision support systems to increase the accuracy of liver disease prediction.
+
+Our prediction model is further validated by the findings of Fagenson et al. [8], who compared the Albumin-Bilirubin Score and Model for End-Stage Liver Disease outcomes. This project aims to improve patient outcomes and management by advancing the prediction of liver disease, a goal motivated by recent research and guidelines.
+
+\textbf{Our Ethical Aims:}
+Taking that this is related to EHR(Electronic Health Records) we are strictly abide the rules and regulations provided by the European Health Organisation and also The Health Insurance Portability and Accountability Act(HIPAA).
+
+\section{Literature Review}
+\vspace{5pt}
+\subsection{[1]:}
+    In this prospective study, we investigated the effectiveness of an electronic health record-embedded clinical decision support system in risk stratifying patients with nonalcoholic fatty liver disease (NAFLD) and identifying gaps in their care. Alarmingly, over half of the patients with NAFLD within primary care settings were found to lack the essential annual screening labs, highlighting a critical area for improvement in proactive disease management. Furthermore, the linkage to care for individuals with abnormal Fibrosis-4 Score (FIB-4) results was strikingly low, with less than 3\% undergoing further evaluation. These findings emphasize the pressing need for interventions to enhance the detection and management of NAFLD, ensuring that individuals with abnormal results receive timely and Focused care to improve patient outcomes.
+\vspace{5pt}
+\subsection{[2]:}
+    The Authors develop a CDSS(Clinical Decision Support System) which performs independently. While performing this process they found a consistent data which was laboratory focused.They have referred to ALFIE Study where it states that 21.7 \% of asymptomatic population from Scotland had at least one Abnormal Liver Function Tests(ALFT).Due to some limitations which arise when using Case Based Reasoning,Artificial Neural Networks and Hybrid Approaches even after providing good results Multiple DSS techniques were used to over come this.The DSS developed in this case consisted of 3 sections: Expert System Algorithm, DILI(Drug Induced Liver Injury) assessment tool, Interactive UI guide for clinicians.When testing this DSS ,The Authors were able to get 18 out of 20 case results the algorithm was able to find precise cause of the ALFT and also it helped the clinicians move forward in the right path of treatments.
+\vspace{5pt}
+\subsection{[3]:}
+    The Authors have developed a hypothesis which consists of evolutionary intelligent methods which can be modeled corresponding to positive and negative rule. These can be used for clinical decision support by providing efficient results and diagnosis.The authors have used a MOPNAR method. This method is a multi-objective rule miner from fibrosis without the interference of a clinical technician.The results from the MOPNAR method consists of 4 sections.The first section is represented by [-1,0,1].if this section's attribute has a value of -1 this section is ignored in the association rule.The second section consists of interval and it is interpreted in 0's and 1's. The third and fourth section is used for lower and upper bound attribute.The results of the MOPNAR method is also compared with the results of another association rule mining method using genetic algorithm named as MOEA-GHOSH. While performing the result comparision of these 2 methods the MOPNAR proved to be more efficient than MOEA-GHOSH method. 
+\vspace{5pt}
+\vspace{5pt}
+\subsection{[4]:}
+    The Authors provide us with the study that offers a thorough analysis of nonalcoholic fatty liver disease (NAFLD) and the most recent revisions to guidelines from the perspectives of the US, Asia, and Europe. The authors address the increasing incidence of non-alcoholic fatty liver disease (NAFLD) and its relationship to obesity and metabolic syndrome, emphasizing the need for a successful strategy for diagnosis, treatment, and prevention. It goes over important topics like what constitutes substantial alcohol use, screening standards, and fibrosis assessment techniques. The paper's comprehensive nature is enhanced by the incorporation of pharmacological interventions and the focus on early recognition and intervention.
+    The review also discusses how NAFLD is changing, with a focus on the transition to metabolic associated fatty liver disease (MAFLD) and its possible effects on diagnosis and treatment approaches. The authors rightly emphasize the significance of hepatocellular carcinoma monitoring and take into account the requirement for future guidelines to adjust to new discoveries in the field.Overall, the paper offers a fair and impartial analysis of non-alcoholic fatty liver disease (NAFLD), highlighting significant results and incorporating the most recent guidelines updates.
+\subsection{[5:]}
+The authors have provided the advantages of EASL CPGs as it is widely distributed and also a small suggested upgrade by including a simple delphie process which helps in approaching much broader audience and to involve Academic experts and stake holders rather than having only the board of directors for CPG and EASL board.This led to taking precise decisions since the process is an iterative approach of getting results in a similar individuals having relevant issues.They follow PICO.The authors suggest that this approach is reasonable,accurate and transparent.
+\subsection{[6:]}
+In this paper the authors have used a general methodology following PICO which is patient or problems,Interventions,Comparison of methods and Outcomes. they have segregated the problem into several common liver diseases and added a bunch of statements with the judgements in four categories.Strong consensus,consensus,majority agreement,no consensus. The statements was formed based upon the guidelines provided by the ESPEN and German S3 guideline.Each liver diseases have their respective statements were validated based on several articles and they were able to find 957 articles which was then filtered down by removing duplicates and similar papers. The list was narrowed down to 122 articles.
+\subsection{[7:]}
+In this the author develops a nutritional chart for people suffering from cirrhosis by assessing their nutritional status using a simple mathematical formula:
+
+\[BMI \pm \text{ Hand grip Strength}\]
+
+The patients who are affected by cirrhosis are required to take 4-7 meals a day and also if they have ascites or edema it is suggested to take a low sodium diet.The study based on this led to a discovery that the cirrhotic patients have high protein intake to achieve a balanced nitrogen metabolism.
+\subsection{[8:]}
+The authors in this article have compared the outcomes of Albumin-Bilirubin score(ALBI) with Model for End-Stage Liver (MELD) in prediction of post hepatectomy liver failure and mortality.The predictive accuracy is obtained by checking the ROC-AUC score.The data used consisted of 13783 patient records and score are found as respectively: AUC 0.67 vs AUC 0.60 for ALBI and MELD. for mortality the scores are as follows AUC 0.70 vs AUC 0.58.So the comparative studies suggest that ALBI scores are better compared to MELD score
+\subsection{[9:]}
+The Authors have taken the data of 1022 patients who had provided the data in a survey in japan are taken.The data is categorized into three groups A,B,C. Patients having diagnosed with hepactomy symptoms within 10 days are categorized as Group A, until 56 days as Group B and above that as Group C .Three clusters of data count 411,320,291 where group A has a survival rate of 90\%, Group B has a survival rate of 52\%, Group C has a survival rate of 60\% after liver transplantation.This helps in easy diagnosis and suitable timely treatment for more survival rate.
+\subsection{[10:]}
+This retrospective study, carried out at Sun Yat-sen University's First Affiliated Hospital, investigates MAFLD patient diversity using robust cluster analysis. The model identifies five distinct clusters, each with distinct characteristics. It was developed using 1038 patients and validated across Chinese and international cohorts.
+The study's power rests in its ability to relate these clusters to medical outcomes. Particularly noteworthy are the considerably worse survival results and elevated risks of T2DM, CHD, stroke, and mortality linked to Cluster 3, which is associated with severe insulin resistance.
+This study emphasizes the need for customized methods in managing MAFLD patients based on their unique cluster profiles and offers a useful framework for personalized interventions. To sum up, this represents a noteworthy advancement in comprehending and managing the intricacies of liver diseases linked to metabolism.
+
+\end{multicols}
+\begin{thebibliography}{9}
+    
+    \bibitem{spann2023}
+    Spann, A. et al. (2023)
+    \textit{Clinical decision support automates care gap detection among primary care patients with nonalcoholic fatty liver disease},
+    Hepatology Communications, 7(3), p. e0035.
+    Available at: \url{https://doi.org/10.1097/HC9.0000000000000035}.
+    
+    \bibitem{chevrier2011}
+    Chevrier, R., Jaques, D. and Lovis, C. (2011)
+    \textit{Architecture of a decision support system to improve clinicians’ interpretation of abnormal liver function tests},
+    Studies in Health Technology and Informatics, 169, pp. 195–199.
+    
+    \bibitem{altay2020}
+    Altay, E.V. and Alatas, B. (2020)
+    \textit{A novel clinical decision support system for liver fibrosis using evolutionary multi-objective method based numerical association analysis},
+    Medical Hypotheses, 144, p. 110028.
+    Available at: \url{https://doi.org/10.1016/j.mehy.2020.110028}.
+    
+    \bibitem{ando2021}
+    Ando, Y. and Jou, J.H. (2021)
+    \textit{Nonalcoholic Fatty Liver Disease and Recent Guideline Updates},
+    Clinical Liver Disease, 17(1), pp. 23–28.
+    Available at: \url{https://doi.org/10.1002/cld.1045}.
+    
+    \bibitem{cornberg2019}
+    Cornberg, M., Tacke, F. and Karlsen, T.H. (2019)
+    \textit{Clinical Practice Guidelines of the European Association for the study of the Liver – Advancing methodology but preserving practicability},
+    Journal of Hepatology, 70(1), pp. 5–7.
+    Available at: \url{https://doi.org/10.1016/j.jhep.2018.10.011}.
+    
+    \bibitem{plauth2019}
+    Plauth, M. et al. (2019)
+    \textit{ESPEN guideline on clinical nutrition in liver disease},
+    Clinical Nutrition, 38(2), pp. 485–521.
+    Available at: \url{https://doi.org/10.1016/j.clnu.2018.12.022}.
+    
+    \bibitem{obrien2008}
+    O’Brien, A. and Williams, R. (2008)
+    \textit{Nutrition in End-Stage Liver Disease: Principles and Practice},
+    Gastroenterology, 134(6), pp. 1729–1740.
+    Available at: \url{https://doi.org/10.1053/j.gastro.2008.02.001}.
+    
+    \bibitem{fagenson2020}
+    Fagenson, A.M. et al. (2020)
+    \textit{Albumin-Bilirubin Score vs Model for End-Stage Liver Disease in Predicting Post-Hepatectomy Outcomes},
+    Journal of the American College of Surgeons, 230(4), pp. 637–645.
+    Available at: \url{https://doi.org/10.1016/j.jamcollsurg.2019.12.007}.
+
+    \bibitem{journal_of_gastroenterology}
+    Nobuaki Nakayama, Makoto Oketani, Yoshihiro Kawamura, Mie Inao, Sumiko Nagoshi, Kenji Fujiwara, Hirohito Tsubouchi \& Satoshi Mochida,
+    \emph{Novel classification of acute liver failure through clustering using a self-organizing map: usefulness for prediction of the outcome},
+    \emph{Journal of Gastroenterology},
+    Available at:
+    \url{https://link.springer.com/article/10.1007/s00535-011-0420-z}.
+
+    \bibitem{Ye2022}
+    Ye, J., et al. (2022). Novel metabolic classification for extrahepatic complication of metabolic associated fatty liver disease: A data-driven cluster analysis with international validation. 
+    \textit{Metabolism}, 136, 155294. 
+    Available at: \url{https://doi.org/10.1016/j.metabol.2022.155294}.
+
+    
+
+    
+\end{thebibliography}
+
+\end{document}

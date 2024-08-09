@@ -1,0 +1,39 @@
+/* Custom styles for the template */
+#wrapper {
+    display: flex;
+    width: 100%;
+    align-items: stretch;
+    
+}
+
+#sidebar-wrapper {
+    min-height: 100vh;
+    margin-left: -15rem;
+    transition: margin 0.25s ease-out;
+    background-color: cornflowerblue;
+}
+
+#sidebar-wrapper .list-group {
+    width: 15rem;
+}
+
+#page-content-wrapper {
+    min-width: 80vw;
+    align-items: center;
+}
+
+#wrapper.toggled #sidebar-wrapper {
+    margin-left: 0;
+    
+}
+
+@media (min-width: 768px) {
+    #sidebar-wrapper {
+        margin-left: 0;
+    }
+
+    #wrapper.toggled #sidebar-wrapper {
+        margin-left: -15rem;
+        
+    }
+}
